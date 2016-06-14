@@ -1,5 +1,5 @@
-# SteamDB-Monitor
-Monitors Steam for changelist updates and posts them to a slack channel
+# Steam-PICS-Monitor
+Monitors the Steam PICS for changelist updates and posts them to a slack channel
 
 ## Installation
 #### Install the required package dependencies
