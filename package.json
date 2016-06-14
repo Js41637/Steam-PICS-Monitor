@@ -1,0 +1,41 @@
+{
+  "name": "steamdb-monitor",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "Js41637",
+    "email": ""
+  },
+  "scripts": {
+    "forever": "forever start -a -o out.log -e err.log -m 1 index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">= 5.10.x"
+  },
+  "main": "build/steam.js",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "needle": "^1.0.0",
+    "steam-user": "^3.8.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.5",
+    "babel-preset-node5": "^11.0.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-develop-server": "^0.5.1",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-util": "^3.0.7",
+    "rimraf": "^2.5.2",
+    "run-sequence": "^1.1.5"
+  }
+}

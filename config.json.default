@@ -1,0 +1,6 @@
+{
+  "slackToken":     "null",
+  "slackChannel":   "null",
+  "botName":        "SteamDB",
+  "botAvatar":      "http://store.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png"
+}
