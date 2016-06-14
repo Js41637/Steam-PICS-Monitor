@@ -9,7 +9,7 @@ Monitors the Steam PICS for changelist updates and posts them to a slack channel
 ##### Dev Mode
 ```gulp start-dev```
 ##### Build and run
-```gulp build``` and ```node build/index.js```
+```gulp build``` and ```node index.js```
 ##### Running forever
 You can use the `forever` npm module to run this bot  
 in the background forever using the command:  
@@ -25,7 +25,7 @@ Copy the `config.json.default` file and fill out the Slack API and Slack Channel
  * "THE BEER-WARE LICENSE" (Revision 42):
  * Js41637 wrote this. You can do whatever you want with this stuff.
  * If we meet some day, and you think this stuff is worth it,
- * you can buy me a beer in return.
+ * you can buy me a ICED COFFEE in return.
  * ----------------------------------------------------------------------------
  */
  ```
