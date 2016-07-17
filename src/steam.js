@@ -19,18 +19,13 @@ client.on('loggedOn', () => {
   console.log("Logged onto Steam as " + client.steamID.getSteam3RenderedID())
 })
 
-var lastChange, change;
+var lastChange
 var list = []
 
 client.on('changelist', (changeNumber, changeApps, changePackages) => {
   console.log("Change", changeNumber, lastChange)
   if (lastChange && lastChange == changeNumber) return
   lastChange = changeNumber
-
-  change = true
-  _.delay(() => {
-    change = false
-  }, 2500)
 
   client.getProductInfo(changeApps, changePackages, (apps, packages, unknownApps, unknownPackages) => {
     let out = [`*Changelist - <https://steamdb.info/changelist/${changeNumber}|${changeNumber}>* _(${changeApps.length} apps and ${changePackages.length} packages)_`]
@@ -51,12 +46,13 @@ client.on('changelist', (changeNumber, changeApps, changePackages) => {
 
 const loop = () => {
   _.delay(() => {
-    if (!change && list.length) {
+    if (list.length) {
+      console.log("Posting list")
       postMessage(list.join('\n'))
       list = []
     }
     loop()
-  }, 30000)
+  }, 18000)
 }
 
 const postMessage = message => {
