@@ -1,6 +1,7 @@
 {
-  "slackToken":     "null",
-  "slackChannel":   "null",
-  "botName":        "SteamDB",
-  "botAvatar":      "http://store.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png"
+  "slackToken": null,
+  "slackChannel": null,
+  "botName": "Steam PICS Monitor",
+  "botAvatar": "http://store.akamai.steamstatic.com/public/shared/images/responsive/share_steam_logo.png",
+  "messageDelay": 16000
 }

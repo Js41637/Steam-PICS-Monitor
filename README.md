@@ -3,17 +3,13 @@ Monitors the Steam PICS for changelist updates and posts them to a slack channel
 
 ## Installation
 #### Install the required package dependencies
-```npm install```
+```yarn install```
 
 ## Usage
 ##### Dev Mode
-```gulp start-dev```
+```yarn dev```
 ##### Build and run
-```gulp build``` and ```node index.js```
-##### Running forever
-You can use the `forever` npm module to run this bot  
-in the background forever using the command:  
-`npm run forever`
+```yarn build``` and ```yarn start```
 
 ## Config File
 Copy the `config.json.default` file and fill out the Slack API and Slack Channel fields and rename it config.json
